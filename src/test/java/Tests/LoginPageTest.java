@@ -40,7 +40,7 @@ public class LoginPageTest extends BasePage{
 		loginPage.clickOnLoginBtn();
 		
 		if(un.isBlank() || pwd.isBlank())
-			Assert.assertEquals("Required123",loginPage.getErrorMsg(),"Error Msg for Blank Username/Password.....");
+			Assert.assertEquals("Required",loginPage.getErrorMsg(),"Error Msg for Blank Username/Password.....");
 		else
 			Assert.assertEquals("Invalid credentials",loginPage.getErrorMsgForInvalidCredentials(),"Error Msg for Wrong Username/Password....");
 	}
