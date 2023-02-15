@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 51.603 sec <<< FAILURE! - in TestSuite
+verifyInvalidCredentials(Tests.LoginPageTest)  Time elapsed: 1.826 sec  <<< FAILURE!
+java.lang.AssertionError: Error Msg for Blank Username/Password..... expected [Required] but found [Required123]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at Tests.LoginPageTest.verifyInvalidCredentials(LoginPageTest.java:43)
+
+verifyInvalidCredentials(Tests.LoginPageTest)  Time elapsed: 2.176 sec  <<< FAILURE!
+java.lang.AssertionError: Error Msg for Blank Username/Password..... expected [Required] but found [Required123]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at Tests.LoginPageTest.verifyInvalidCredentials(LoginPageTest.java:43)
+

@@ -3,7 +3,21 @@
   <groupId>com..success</groupId>
   <artifactId>Alpha</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+	
   	<dependencies>
+  	<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok-maven-plugin -->
+<dependency>
+    <groupId>org.projectlombok</groupId>
+    <artifactId>lombok-maven-plugin</artifactId>
+    <version>1.18.20.0</version>
+    <scope>provided</scope>
+</dependency>
+
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
@@ -43,7 +57,7 @@
 				<configuration>
 					<testFailureIgnore>false</testFailureIgnore>
 					<suiteXmlFiles>
-						<suiteXmlFile>testng.xml</suiteXmlFile>
+						<suiteXmlFile>testngsuiteSmoke.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
